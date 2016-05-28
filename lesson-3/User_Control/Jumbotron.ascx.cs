@@ -5,18 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace lesson_3
+namespace lesson_3.User_Control
 {
-    public partial class Contacts : System.Web.UI.Page
+    public partial class Jumbotron : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void ButtonSubmit_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Default.aspx");
         }
     }
 }

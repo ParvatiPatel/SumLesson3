@@ -100,6 +100,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="User_Control\Jumbotron.ascx" />
     <Content Include="User_Control\Navbar.ascx" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -112,7 +113,9 @@
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contacts.aspx.cs">
@@ -128,6 +131,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Jumbotron.ascx.cs">
+      <DependentUpon>Jumbotron.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Jumbotron.ascx.designer.cs">
+      <DependentUpon>Jumbotron.ascx</DependentUpon>
     </Compile>
     <Compile Include="User_Control\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
